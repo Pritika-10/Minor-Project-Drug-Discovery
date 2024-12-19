@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Discovery Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Drug Discovery Tool</h1>
+    <div id="upload-section">
+        <h2>Upload Dataset</h2>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+    <div id="filter-section" style="display:none;">
+        <h2>Filter Molecules</h2>
+        <input type="number" id="threshold" placeholder="Enter docking score threshold">
+        <button id="filter-btn">Filter</button>
+        <table id="results-table">
+            <thead>
+                <tr>
+                    <th>Molecule</th>
+                    <th>SMILES</th>
+                    <th>Docking Score</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button id="visualize-btn">Visualize Molecules</button>
+        <img id="molecule-img" style="display:none;" src="" alt="Molecules Visualization">
+        <button id="download-btn">Download Filtered Data</button>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

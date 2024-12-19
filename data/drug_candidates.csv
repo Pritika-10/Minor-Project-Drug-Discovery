@@ -1,0 +1,6 @@
+Molecule,SMILES,Docking_Score
+Mol1,CCO,-7.2
+Mol2,CCN,-8.5
+Mol3,CCC,-5.3
+Mol4,CCCl,-9.1
+Mol5,CCBr,-6.8
